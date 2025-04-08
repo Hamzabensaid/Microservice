@@ -1,0 +1,30 @@
+spring:
+
+  mail:
+    host: localhost
+    port: 1025
+    username: hamza
+    password: hamza
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+        auth: true
+        starttls:
+          enable: true
+        connectiontimout: 50000
+        timeout: 3000
+        writetimeout: 5000
+
+application:
+  security:
+    jwt:
+      secret-key: gZy6zW+gLVCJU5QYc+9oZg==RANDOMjw90cHEQo==kGHfyA5vX1o=
+
+      expiration: 86400000
+  mailing:
+    frontend:
+      activation-url: http://localhost:4200/activate-account
+
+server:
+  port: 8089
